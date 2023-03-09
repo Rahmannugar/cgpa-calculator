@@ -75,3 +75,7 @@ const calculateCGPA = () => {
 calcBtn.addEventListener("click", () => {
   calculateCGPA();
 });
+
+
+//Basic calculator for university undergraduates' usage.
+//Major tools used includes - TailwindCss.
