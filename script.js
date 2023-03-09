@@ -22,7 +22,7 @@ addBtn.addEventListener("click", () => {
   courseCounter.textContent = `Courses: ${counter}`;
 
   const newCourseList = document.createElement("div");
-  newCourseList.id = "new-course-list";
+  newCourseList.id = `new-course-list${counter}`;
   newCourseList.textContent = `${courseCode} ${creditUnit} ${gradeSelect.value}`;
   newCourseList.className =
     "bg-black text-white flex justify-center my-2 py-3 mx-10";
@@ -30,13 +30,17 @@ addBtn.addEventListener("click", () => {
 });
 
 removeBtn.addEventListener("click", () => {
-  const newCourseList = document.getElementById("new-course-list");
+  const newCourseList = document.getElementById(`new-course-list${counter}`);
   counter--;
   if (counter < 0) {
     return (counter = 0);
   }
   courseCounter.textContent = `Courses: ${counter}`;
   newCourseList.remove();
+  units.pop();
+  grades.pop();
+  // console.log({ units });
+  // console.log({ grades });
 });
 
 //Conditions for grading system
