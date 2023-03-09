@@ -75,3 +75,5 @@ const calculateCGPA = () => {
 calcBtn.addEventListener("click", () => {
   calculateCGPA();
 });
+
+//Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi ipsum, culpa, cupiditate quidem ad harum recusandae et, vero expedita a enim tempore ducimus dolorem fugiat dolorum inventore adipisci sapiente iusto iure! Fugit, qui debitis rerum sapiente velit, deserunt esse ipsam natus quia architecto nihil, non aperiam! Officiis ad eaque vitae.
